@@ -32,7 +32,6 @@ public class LoginPage {
 
 
 
-
     // Step 2 - Page Actions
     public String loginToVWOLoginInvalidCreds(String user, String pwd) {
         driver.get(PropertiesReader.readKey("url"));
@@ -55,5 +54,7 @@ public class LoginPage {
         // Wait - Thread sleep
         WaitHelpers.waitJVM(5000);
     }
+
+
 
 }
