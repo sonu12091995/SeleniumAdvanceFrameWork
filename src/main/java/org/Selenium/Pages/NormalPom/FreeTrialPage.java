@@ -1,4 +1,4 @@
-package org.Selenium.Pages;
+package org.Selenium.Pages.NormalPom;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

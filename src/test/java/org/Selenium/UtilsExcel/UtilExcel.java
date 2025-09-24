@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class UtilExcel {
     // C:\Selenium\SeleniumLearning == System.getProperty("user.dir")
-    public static String SHEET_PATH = System.getProperty("user.dir") + "/src/test/Resource/TestData.xlsx";
+    public static String SHEET_PATH = System.getProperty("user.dir") + "/src/test/resources/TestData.xlsx";
     static Workbook book;
     static Sheet sheet;
 

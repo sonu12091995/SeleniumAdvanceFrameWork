@@ -1,4 +1,4 @@
-package org.Selenium.Pages;
+package org.Selenium.Pages.NormalPom;
 
 import org.Selenium.Utils.PropertiesReader;
 import org.Selenium.Utils.WaitHelpers;

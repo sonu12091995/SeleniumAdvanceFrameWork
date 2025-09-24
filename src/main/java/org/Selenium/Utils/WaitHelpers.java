@@ -11,8 +11,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.function.Function;
 
-public class WaitHelpers {
+import static org.Selenium.Drivers.DriverManger.getDriver;
 
+public class WaitHelpers {
 
     public static void waitJVM(int time) {
         try {
@@ -61,6 +62,26 @@ public class WaitHelpers {
             }
         });
     }
+
+    public static WebElement presenceOfElement(By elementLocation) {
+        return new WebDriverWait(getDriver(), Duration.ofSeconds(20)).until(ExpectedConditions.presenceOfElementLocated(elementLocation));
+    }
+
+    public static WebElement presenceOfElement(WebDriver driver,By elementLocation) {
+        return new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.presenceOfElementLocated(elementLocation));
+    }
+
+    public static WebElement visibilityOfElement(By elementLocation) {
+        return new WebDriverWait(getDriver(), Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOfElementLocated(elementLocation));
+    }
+    public static WebElement visibilityOfElement(WebElement elementLocation) {
+        return new WebDriverWait(getDriver(), Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(elementLocation));
+    }
+
+    public WebElement getElement(By key) {
+        return getDriver().findElement(key);
+    }
+
 
 
 }
