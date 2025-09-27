@@ -14,6 +14,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class CreateAccountI_driver_Registartion extends CommonToAllTest {
     // This class can be used to implement test cases related to creating an account using iDriver.
 
+    // Registarion with propert file dynamically
     @Test
     public void test_Idrive_Account_Payment() {
         CreateAccountLink createAccountLink = new CreateAccountLink(getDriver());
@@ -22,13 +23,13 @@ public class CreateAccountI_driver_Registartion extends CommonToAllTest {
         // After the link is clicked, go to registration form
         CreateAccount createAccount = new CreateAccount(getDriver());
         createAccount.createDriveAccount(
-                "Sonu", "sharma", "Sonu.sharma@gmail.com",
-                "Sonu@1995", "TaashaTech", "9823522353");
-                          System.out.println(driver.getTitle());
-
-
-                    IDirverMainPage iDirverMainPage = new IDirverMainPage(getDriver());
-                     iDirverMainPage.IdriveMain(PropertiesReader.readKey("iDrive_URL"));
+                PropertiesReader.readKey("firstName"),
+                PropertiesReader.readKey("lastName"),
+                PropertiesReader.readKey("MAil"),
+                PropertiesReader.readKey("Pass"),
+                PropertiesReader.readKey("company"),
+                PropertiesReader.readKey("phoneNumber")
+        );
     }
 }
 
