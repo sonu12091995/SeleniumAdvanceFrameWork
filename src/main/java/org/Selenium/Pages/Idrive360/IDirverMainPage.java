@@ -14,11 +14,15 @@ public class IDirverMainPage extends CommonToAllPage {
     }
 
     private By title = By.xpath("//a[@title = \"Menu\"]");
+    private By myAccount = By.xpath("//a[text()= \"My Account\"]");
 
 
-    public void clickOnTitle(){
+
+
+    public void IdriveMain(String iDriveUrl){
         waitJVM(5000);
         clickElement(title);
+        clickElement(myAccount);
     }
 
 }

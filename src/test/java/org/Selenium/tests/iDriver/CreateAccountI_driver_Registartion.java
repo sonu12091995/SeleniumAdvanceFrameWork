@@ -26,9 +26,9 @@ public class CreateAccountI_driver_Registartion extends CommonToAllTest {
                 "Sonu@1995", "TaashaTech", "9823522353");
                           System.out.println(driver.getTitle());
 
-               // clcik on the hemnberger button
-                IDirverMainPage titlePage = new IDirverMainPage(getDriver());
-              titlePage.clickOnTitle();
+
+                    IDirverMainPage iDirverMainPage = new IDirverMainPage(getDriver());
+                     iDirverMainPage.IdriveMain(PropertiesReader.readKey("iDrive_URL"));
     }
 }
 
