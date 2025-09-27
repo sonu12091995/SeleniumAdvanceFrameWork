@@ -17,6 +17,10 @@ public class CommonToAllPage {
         getDriver().get(PropertiesReader.readKey("ohr_url"));
     }
 
+    public void iDrive360Url(){
+        getDriver().get(PropertiesReader.readKey("iDrive_URL"));
+    }
+
     public void openKatalonUrl(){
         getDriver().get(PropertiesReader.readKey("katalon_url"));
     }
