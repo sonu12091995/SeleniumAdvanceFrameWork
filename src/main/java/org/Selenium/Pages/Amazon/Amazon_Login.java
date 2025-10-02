@@ -1,8 +1,7 @@
-package org.Selenium.Pages;
+package org.Selenium.Pages.Amazon;
 
 import org.Selenium.Utils.WaitHelpers;
 import org.Selenium.base.CommonToAllPage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

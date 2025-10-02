@@ -1,9 +1,8 @@
 package org.Selenium.DataDriven;
 import org.Selenium.Drivers.DriverManger;
-import org.Selenium.Pages.Amazon_Login;
+import org.Selenium.Pages.Amazon.Amazon_Login;
 import org.Selenium.UtilsExcel.UtilExcel;
 import org.Selenium.base.CommonToAllTest;
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
