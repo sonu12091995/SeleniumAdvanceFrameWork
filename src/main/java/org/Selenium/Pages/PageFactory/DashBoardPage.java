@@ -1,4 +1,4 @@
-package org.Selenium.Pages.ImporvedPom;
+package org.Selenium.Pages.PageFactory;
 
 import org.Selenium.Utils.WaitHelpers;
 import org.Selenium.base.CommonToAllPage;
