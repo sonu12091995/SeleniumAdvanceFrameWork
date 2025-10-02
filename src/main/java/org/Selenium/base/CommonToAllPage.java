@@ -13,6 +13,11 @@ public class CommonToAllPage {
         getDriver().get(PropertiesReader.readKey("url"));
     }
 
+
+    public void Amazon_URL() {
+        getDriver().get(PropertiesReader.readKey("Amazon_url"));
+    }
+
     public void openOrangeHRMUrl(){
         getDriver().get(PropertiesReader.readKey("ohr_url"));
     }

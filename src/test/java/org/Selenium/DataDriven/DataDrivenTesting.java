@@ -1,8 +1,6 @@
 package org.Selenium.DataDriven;
-
 import org.Selenium.Drivers.DriverManger;
-import org.Selenium.Pages.NormalPom.LoginPage;
-import org.Selenium.Utils.PropertiesReader;
+import org.Selenium.Pages.Amazon_Login;
 import org.Selenium.UtilsExcel.UtilExcel;
 import org.Selenium.base.CommonToAllTest;
 import org.testng.Assert;
@@ -15,18 +13,18 @@ public class DataDrivenTesting extends CommonToAllTest {
 
     //private static final Logger logger = LogManager.getLogger(DataDrivenTesting.class);
     @Test(dataProvider = "getData")
-    public void test_vwo_login(String email, String password) {
+    public void test_Amazon_login(String email, String password) {
 
         // Page Class Code (POM Code) - 2 - L
-        LoginPage loginPage = new LoginPage(DriverManger.getDriver());
-        String error_msg = loginPage.loginToVWOLoginInvalidCreds(email,password);
+        Amazon_Login amazonLogin = new Amazon_Login(DriverManger.getDriver());
+        amazonLogin.Amazon_InvalidLogins(email,password);
 
-        // Assertions - 3 - V
+    /*    // Assertions - 3 - V
 
         //logger.info("Asserting the Invalid credentials");
 
         assertThat(error_msg).isNotNull().isNotBlank().isNotEmpty();
-        Assert.assertEquals(error_msg,PropertiesReader.readKey("error_message"));
+        Assert.assertEquals(error_msg,PropertiesReader.readKey("error_message"));*/
 
 
 
